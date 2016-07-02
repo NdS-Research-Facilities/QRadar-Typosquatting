@@ -15,6 +15,8 @@ AQL usage sample:
 select "test_in" as ii, "test_out" as oo, NDSRF::ISFUZZY(ii,oo) as ff from events group by ii,oo order by ff desc last 1 DAYS 
 
 Event rule using this test to e.g. create offenses (see fuzzy-rule2.png)
+Example below will create an offense when the two names are not the same (!=1) and above a non-match (which you will need to tune in your environment)
+
 
 NDSRF::ISFUZZY("test_in","test_out") !=1 AND  NDSRF::ISFUZZY("test_in","test_out") >= 0.1
 
