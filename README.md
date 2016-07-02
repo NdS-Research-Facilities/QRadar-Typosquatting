@@ -1,5 +1,5 @@
 # QRadar-Typosquatting
-QRadar Custom AQL Property (CAP) determine likely sameness on 2 strings (find Typosquatting)
+QRadar Custom AQL Property (CAP) determine likely sameness on 2 strings (find Typosquatting) see https://www.proofpoint.com/us/threat-insight/post/Attackers-Increasing-Use-Of-Typosquatting
 
 Can be used to find "almost" matching domain names in email headers in order to detect spearfishing (from: looking like the intended recepient company e.g.)
 
