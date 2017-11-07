@@ -327,7 +327,7 @@ if (in_b === null) {in_b='totally different ';}
         result = 0;
     }
     finally {
-        return result;
+        return Number(result);
     }
 }
 </script>
