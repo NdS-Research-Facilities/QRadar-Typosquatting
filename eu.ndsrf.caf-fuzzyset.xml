@@ -320,8 +320,8 @@ if (in_a === null) {in_a='empty';}
 if (in_b === null) {in_b='totally different ';}
     try { 
         comp = FuzzySet();
-        comp.add(in_a);
-        result = (comp.get(in_b)[0][0]).toPrecision(4);
+        comp.add(in_a.toLowerCase());
+        result = (comp.get(in_b.toLowerCase())[0][0]).toPrecision(4);
     }
     catch(err) {
         result = 0;
