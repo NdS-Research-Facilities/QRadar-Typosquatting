@@ -1,0 +1,122 @@
+{
+  "_id": "IBMQRadar:QRadar-Typosquatting",
+  "_rev": "",
+  "value":
+  {
+    "rev": ""
+  },
+  "key": "",
+  "doc":
+  {
+    "_id": "IBMQRadar:QRadar-Typosquatting",
+    "_rev": "1.1",
+    "extension_manifest":
+  	{
+        "locale":
+  	  {
+          'en-US':
+    		{
+    		  "extension.name": "IBM QRadar Typosquatting by NdSRF.eu",
+    		  "extension.short.description": "QRadar-Typosquatting<br/>
+          QRadar Custom AQL Function (CAF) to determine likely sameness on 2 strings (find Typosquatting)<br/>see https://www.proofpoint.com/us/threat-insight/post/Attackers-Increasing-Use-Of-Typosquatting<br/>",
+    		  "extension.long.description": "Can be used to find 'almost' matching domain names e.g. in email headers in order to detect spearfishing.<br/>
+<br/>
+AQL usage sample: <br/>
+<br/>
+select NDSRF::ISFUZZY('Retrun.COM','return.com') as ff from events<br/>
+<br/>
+See also https://github.com/NdS-Research-Facilities/QRadar-Typosquatting<br/><br/>
+          "
+    		}
+      },
+      "extension_name": "extension.name",
+      "extension_short_description": "extension.short.description",
+      "extension_long_description": "extension.long.description",
+      "supported_language_set":
+  	  [
+  		'en-US'
+  	  ],
+      "version": "1.1",
+      "manifest_version": "1.1",
+      "exported_qradar_version": "7.2.8.20170412132433",
+      "min_qradar_version": "7.2.8",
+      "authored_on": 1499438166,
+      "authored_by": "NdSRF.eu",
+      "authored_by_email": "qradar@ndsrf.eu",
+      "packaged_on": 1499438166,
+      "packaged_by": "Nico de Smidt",
+      "packaged_by_email": "qradar@ndsrf.eu",
+      "package_size": 747869,
+      "signed": false,
+      "beta": false,
+      "debug": false,
+      "screenshots":
+  	  [
+  	    "fuzzy1.png","fuzzy2.png","fuzzy3.png","fuzzy-rule1.png","fuzzy-rule2.png","fuzzy-rule3.png",
+
+      ],
+      "icons":
+  	  {
+
+      },
+      "extension_hub":
+  	  {
+        "tags":
+  		  {
+            "custom": "",
+            "general_solutions_area":
+  		    {
+
+            },
+            "industry":
+  		    {
+
+            },
+            "ibm_security_product_category":
+  		    {
+
+            },
+            "ibm_security_products":
+  		    {
+
+            },
+  		    "contents":
+  		    {
+  		      "Custom List": 0,
+  		      "Dashboard": 0,
+  		      "Reports": 0,
+  		      "Saved Search": 0,
+  		      "FGroup": 0,
+  		      "FGroup Type": 0,
+  		      "Custom Rule": 0,
+  		      "Custom Properties": 0,
+  		      "Log Sources": 0,
+  		      "Log Source Type": 0,
+  		      "Log Source Category": 0,
+  		      "Log Source Extension": 0,
+  		      "Custom QidMap Entries": 0,
+  		      "Reference Data Collection": 0,
+  		      "Historical Correlation profile": 0,
+  		      "Custom Functions": 1,
+  		      "Custom Actions": 0,
+  		      "Application": 0,
+  		      "Other": 0
+  		    },
+          "vendor_specific":
+  		  [
+
+          ]
+        },
+          "release_notes": "release.notes"
+      },
+      "contents":
+  	  {
+
+      }
+    },
+    "_attachments":
+  	{
+
+    }
+  }
+}
